@@ -4,6 +4,7 @@ import { questions } from "./questions/questions-enum";
 import {handleQuestion1} from "./questions/question1";
 import {handleQuestion2} from "./questions/question2";
 import {handleQuestion3} from "./questions/question3";
+import {handleQuestion4} from "./questions/question4";
 
 console.log('Eu me chamo João, mas todos me chamam de Grille! Essas são as minhas soluções para o desafio de estágio da Target Sistemas');
 
@@ -24,7 +25,7 @@ switch (choice) {
     handleQuestion3()
     break;
   case 4:
-    console.log(`Questao 4`);
+    handleQuestion4()
     break;
   case 5:
     console.log(`Questao 5`);
