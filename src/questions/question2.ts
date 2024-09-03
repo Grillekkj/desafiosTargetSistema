@@ -16,7 +16,6 @@ const countA = (text: string): void => {
     }
     console.log(`A letra "a" aparece ${count} vezes no texto.`);
   }
-
   if (!text.includes('a')){
     console.log('A letra "a" não aparece no texto.');
   }

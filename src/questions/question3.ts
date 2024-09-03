@@ -12,5 +12,6 @@ const soma = (): number => {
     k = k + 1;
     somaVar = somaVar + k;
   }
+
   return somaVar
 }
