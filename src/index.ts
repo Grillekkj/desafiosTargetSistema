@@ -13,25 +13,39 @@ questions.forEach((question, index) => {
   console.log(`\n${index + 1}. ${question.description}`);
 });
 
-const choice = parseInt(prompt('\nEscolha uma questão para visualizar (1-5): '), 10);
+let choice: number;
 
-switch (choice) {
-  case 1:
-    handleQuestion1()
-    break;
-  case 2:
-    handleQuestion2()
-    break;
-  case 3:
-    handleQuestion3()
-    break;
-  case 4:
-    handleQuestion4()
-    break;
-  case 5:
-    handleQuestion5()
-    break;
-  default:
-    console.log('Opção inválida.');
-    break;
-}
+do {
+  questions.forEach((question, index) => {
+    console.log(`\n${index + 1}. ${question.description}`);
+  });
+
+  choice = parseInt(prompt('\nEscolha uma questão para visualizar (1-5) ou 9 para sair: '), 10);
+
+  switch (choice) {
+    case 1:
+      handleQuestion1();
+      break;
+    case 2:
+      handleQuestion2();
+      break;
+    case 3:
+      handleQuestion3();
+      break;
+    case 4:
+      handleQuestion4();
+      break;
+    case 5:
+      handleQuestion5();
+      break;
+    case 9:
+      break;
+    default:
+      console.log('Opção inválida.');
+      break;
+  }
+
+  if (choice !== 9) {
+    choice = parseInt(prompt('\nDeseja escolher outra questão? Digite enter para voltar ao menu ou 9 para sair: '), 10);
+  }
+} while (choice !== 9);
