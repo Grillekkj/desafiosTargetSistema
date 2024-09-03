@@ -3,6 +3,7 @@ const prompt = promptSync();
 import { questions } from "./questions/questions-enum";
 import {handleQuestion1} from "./questions/question1";
 import {handleQuestion2} from "./questions/question2";
+import {handleQuestion3} from "./questions/question3";
 
 console.log('Eu me chamo João, mas todos me chamam de Grille! Essas são as minhas soluções para o desafio de estágio da Target Sistemas');
 
@@ -20,7 +21,7 @@ switch (choice) {
     handleQuestion2()
     break;
   case 3:
-    console.log(`Questao 3`);
+    handleQuestion3()
     break;
   case 4:
     console.log(`Questao 4`);
