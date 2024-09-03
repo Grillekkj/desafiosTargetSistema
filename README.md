@@ -16,7 +16,7 @@ Este repositório contém a solução para o desafio de estágio proposto pela e
 
    ```bash
    git clone https://github.com/Grillekkj/desafiosTargetSistema.git
-   cd
+   cd desafiosTargetSistema
    
 2. **Com o node instalado, execute:**
    ```bash
@@ -26,7 +26,7 @@ Este repositório contém a solução para o desafio de estágio proposto pela e
    cd src
 4. **Execute o programa usando o comando abaixo:**
    ```bash
-   npx ts-node index.js
+   npx ts-node index.ts
 
 ## Respostas dos Desafios
 
