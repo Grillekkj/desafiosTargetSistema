@@ -5,6 +5,7 @@ import {handleQuestion1} from "./questions/question1";
 import {handleQuestion2} from "./questions/question2";
 import {handleQuestion3} from "./questions/question3";
 import {handleQuestion4} from "./questions/question4";
+import {handleQuestion5} from "./questions/question5";
 
 console.log('Eu me chamo João, mas todos me chamam de Grille! Essas são as minhas soluções para o desafio de estágio da Target Sistemas');
 
@@ -28,7 +29,7 @@ switch (choice) {
     handleQuestion4()
     break;
   case 5:
-    console.log(`Questao 5`);
+    handleQuestion5()
     break;
   default:
     console.log('Opção inválida.');

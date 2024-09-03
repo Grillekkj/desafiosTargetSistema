@@ -1,0 +1,3 @@
+export const handleQuestion5 = (): void => {
+  return console.log('Primeiro, eu nomearia os interruptores da esquerda para a direita como A, B e C. Deixaria o interruptor A ligado por algum tempo até a lâmpada esquentar e, em seguida, o desligaria. Depois, ligaria o interruptor B. Iria até uma das salas e verificaria a lâmpada. Se ela estiver quente e desligada, o interruptor A controla essa lâmpada; se estiver ligada, o interruptor B é o responsável; e se estiver desligada e fria, o interruptor C controla a lâmpada. Assim, eu utilizaria a última ida às salas para verificar a segunda lâmpada e, por método de eliminação, concluir qual interruptor controla a lâmpada restante.')
+}
