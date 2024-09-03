@@ -1,6 +1,7 @@
 import promptSync from 'prompt-sync';
-import { questions } from "./questions/questions-enum";
 const prompt = promptSync();
+import { questions } from "./questions/questions-enum";
+import {handleQuestion1} from "./questions/question1";
 
 console.log('Eu me chamo João, mas todos me chamam de Grille! Essas são as minhas soluções para o desafio de estágio da Target Sistemas');
 
@@ -8,11 +9,11 @@ questions.forEach((question, index) => {
   console.log(`\n${index + 1}. ${question.description}`);
 });
 
-const input = parseInt(prompt('\nEscolha uma questão para visualizar (1-5): '), 10);
+const choice = parseInt(prompt('\nEscolha uma questão para visualizar (1-5): '), 10);
 
-switch (input) {
+switch (choice) {
   case 1:
-    console.log(`Questao 1`);
+    handleQuestion1()
     break;
   case 2:
     console.log(`Questao 2`);
